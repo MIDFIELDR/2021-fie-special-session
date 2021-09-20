@@ -1,0 +1,136 @@
+--- 
+title: "Is MIDFIELD for me?"
+subtitle: "2021 FIE Special Session"
+author: "Susan Lord, Matthew Ohland, Marisa Orr, Richard Layton, and Russell Long"
+date: "2021-10-13"
+site: bookdown::bookdown_site
+output: 
+  bookdown::gitbook:
+    pandoc_args: ["--csl", "ieee-with-url.csl"]
+documentclass: book
+bibliography: [book.bib, packages.bib, references.bib]
+link-citations: yes
+github-repo: MIDFIELDR/2021-fie-special-session
+cover-image: "figures/midfield-grad-logo.png"
+always_allow_html: true
+---
+
+
+
+# Introduction {#introduction}
+
+```{r echo = FALSE}
+source("utils.R")
+```
+
+```{r include = FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+	.packages(), 'bookdown', 'knitr', 'rmarkdown', 'data.table', 'wrapr', 'midfieldr', 'midfielddata', 'ggplot2', 'gapminder'
+), 'packages.bib')
+```
+
+```{r echo = FALSE}
+htmltools::img(src = knitr::include_graphics("figures/midfield-grad-logo.png"), 
+							 alt = 'midfield logo', 
+							 style = 'left:0px; padding:10px;',
+							 width = 200)
+```
+
+## Objectives 
+
+[**MIDFIELD**](https://engineering.purdue.edu/MIDFIELD){target="_blank"}---as of May 1, 2021---contains individual Student Unit Record (SUR) data for 1.7 M undergraduates at 19 institutions with ABET-accredited engineering programs. Of those, 302,631 students declared engineering as a major at some point in their undergraduate education. MIDFIELD is a comprehensive resource that includes  demographic, enrollment, course performance, and graduation data. A total of 33 institutions have completed Memoranda of Understanding and are expected to be included in the next release.
+
+At the conclusion of the session, participants should be able
+to: 
+
+
+- describe MIDFIELD and the data it contains
+- describe student record data
+- describe some key research results that have been obtained using MIDFIELD
+- determine if MIDFIELD would be useful for their research
+- outline process to access MIDFIELD
+- plan for future workshops if interested in learning more about MIDFIELD
+
+
+
+
+
+## Description 
+
+This special session introduces participants to the Multiple-Institution Database for Investigating Longitudinal Development (MIDFIELD). MIDFIELD includes longitudinal, whole population data for multiple institutions. This enables researchers to examine student characteristics such as race/ethnicity, sex, or age and curricular pathways,including coursework, by institution and over time. Because the data set contains records of all students matriculating over a period of time, researchers can study students in all disciplines, not just engineering. 
+
+
+
+
+
+## Agenda 
+
+```{r echo = FALSE}
+df <- wrapr::build_frame(
+	"Min", "Topic" |
+		"5", "Session introduction" |
+	  "15", "Key research results usng MIDFIELD" |
+		"35", "Finding stories in the data" |
+		"20", "Resources to facilitate use of MIDFIELD " |
+		"5", "Wrap-up"
+)
+knitr::kable(df, booktabs = TRUE)
+```
+
+
+
+
+
+
+
+## Facilitators
+
+Susan Lord 
+
+: Director of the MIDFIELD Institute and Professor and Chair of Integrated Engineering at the University of San Diego.  She is a Fellow of the IEEE and the ASEE. Dr. Lord has considerable experience facilitating workshops including the National Effective Teaching Institute (NETI) and special sessions at FIE. (slord@sandiego.edu) 
+
+Matthew Ohland 
+
+: MIDFIELD Director and Principal Investigator. He is Professor and Associate Head of Engineering Education at Purdue University and a Fellow of IEEE, ASEE, and AAAS. Dr. Ohland has considerable experience facilitating workshops including the NETI and CATME training.   (ohland@purdue.edu)
+
+Marisa Orr
+
+: MIDFIELD Associate Director and Associate Professor in Engineering and Science Education with a joint appointment in Mechanical Engineering at Clemson University. She received the 2009 Helen Plants Award for the best nontraditional session at FIE, "Enhancing Student Learning Using SCALE-UP Format." (marisak@clemson.edu)
+
+Richard Layton 
+
+: MIDFIELD  Data Visualization Specialist and Professor Emeritus of Mechanical Engineering at Rose-Hulman Institute of Technology. He is the lead developer of the R packages used with the MIDFIELD practice data sets. Dr. Layton has considerable experience facilitating workshops, including FIE workshops on data visualization (2014) and midfieldr (2018). (graphdoctor@gmail.com) 
+
+Russell Long 
+
+: MIDFIELD Managing Director and Data Steward. He developed the stratified data sample for the R packages used in this workshop. Mr. Long is a SAS expert with over twenty years of experience in institutional research and assessment. (ralong@purdue.edu)
+
+
+
+
+## Licenses 
+
+The following licenses apply to the text, data, and code in these workshops. Our goal is to minimize legal encumbrances to the dissemination, sharing, use, and re-use of this work. However, the existing rights of authors whose work is cited (text, code, or data) are reserved to those authors.
+
+- [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) for all text  
+- [GPL-3](https://www.r-project.org/Licenses/GPL-3) for all code  
+- [CC0](https://wiki.creativecommons.org/wiki/CC0_use_for_data) for all data    
+
+
+## Acknowledgement 
+
+Funding provided by the National Science Foundation Grant 1545667 "Expanding Access to and Participation in the Multiple-Institution Database for Investigating Engineering Longitudinal Development." 
+
+```{r echo = FALSE}
+htmltools::img(src = 
+knitr::include_graphics("figures/NSF_4-Color_bitmap_Logo.png"), 
+               alt = 'NSF logo', 
+               width = 90)
+```
+
+
+
+<br>
+[&#9650; top of page](#introduction)
+
