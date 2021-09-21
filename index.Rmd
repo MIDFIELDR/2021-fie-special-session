@@ -69,7 +69,7 @@ This special session introduces participants to the Multiple-Institution Databas
 df <- wrapr::build_frame(
 	"Min", "Topic" |
 		"10", "Session introduction" |
-	  "15", "Key research results usng MIDFIELD" |
+	  "15", "Key research results using MIDFIELD" |
 		"35", "Finding stories in the data" |
 		"25", "Resources to facilitate use of MIDFIELD " |
 		"5", "Wrap-up"
