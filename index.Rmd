@@ -68,10 +68,10 @@ This special session introduces participants to the Multiple-Institution Databas
 ```{r echo = FALSE}
 df <- wrapr::build_frame(
 	"Min", "Topic" |
-		"5", "Session introduction" |
+		"10", "Session introduction" |
 	  "15", "Key research results usng MIDFIELD" |
 		"35", "Finding stories in the data" |
-		"20", "Resources to facilitate use of MIDFIELD " |
+		"25", "Resources to facilitate use of MIDFIELD " |
 		"5", "Wrap-up"
 )
 knitr::kable(df, booktabs = TRUE)
